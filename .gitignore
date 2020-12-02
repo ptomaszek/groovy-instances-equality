@@ -1,0 +1,15 @@
+.gradle/
+target/
+build/
+
+.idea
+*.iml
+.settings/
+.classpath
+.project
+
+.gradle
+
+!gradle-wrapper.jar
+.gradletasknamecache
+**/build/

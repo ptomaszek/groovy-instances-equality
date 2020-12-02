@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '4.0.1'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:3.0.6"
+}
+
+sourceSets.main.groovy {
+    srcDirs = [ 'src' ]
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.MainGroovy'
+    }
+}
